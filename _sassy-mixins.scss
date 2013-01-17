@@ -11,13 +11,13 @@
 	bottom:$bottom;
 }
 
-@mixin fontCond(){
+@mixin fontCond($sansCondFontFamily){
 	font-family:$sansCondFontFamily;
 }
-@mixin fontSans(){
+@mixin fontSans($sansFontFamily){
 	font-family:$sansFontFamily;
 }
-@mixin fontSerif(){
+@mixin fontSerif($serifFontFamily){
 	font-family:$serifFontFamily;
 }
 
