@@ -21,4 +21,12 @@
 	font-family:$serifFontFamily;
 }
 
-
+@mixin imgReplace($imgSrc){
+	display:inine-block;
+	overflow:hidden;
+	text-indent: -999em;
+	*vertical-align: auto; // ie7 fix
+  	zoom: 1; // ie7 fix
+  	*display: inline // ie7 fix
+  	*float:left; // ie7 fix
+}
