@@ -1,3 +1,20 @@
+//
+//  Functions
+//
+
+@function black($opacity){
+    @return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+    @return rgba(255,255,255,$opacity)
+}
+
+
+
+//
+//  MIXINS
+//
+
 @mixin size($width,$height){
   width:$width;
 	height:$height;
@@ -21,12 +38,23 @@
 	font-family:$serifFontFamily;
 }
 
-@mixin imgReplace($imgSrc){
+@mixin imgReplace($imgSrc, $position: top center){
 	display:inine-block;
 	overflow:hidden;
 	text-indent: -999em;
+	background-image:url($imgSrc);
+	background-repeat: no-repeat;
+	background-position: $position;
+	background-color:transparent;
 	*vertical-align: auto; // ie7 fix
   	zoom: 1; // ie7 fix
   	*display: inline // ie7 fix
   	*float:left; // ie7 fix
 }
+
+
+
+
+
+
+
